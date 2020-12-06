@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Angular NgModel</h1>
+
+  <app-switch
+    [(ngModel)]="appState"
+    (ngModelChange)="onModelChange($event)"
+  ></app-switch>
+
+  <p>State value: {{ appState }}</p>
+</div>
